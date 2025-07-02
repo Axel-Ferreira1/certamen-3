@@ -60,7 +60,7 @@ body {
 }
 
 .evaluacion-form button {
-  background-color: #ff0000;
+  background-color: #3300ff;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -73,7 +73,7 @@ body {
 }
 
 .evaluacion-form button:hover {
-  background-color: #0056b3;
+  background-color: #f90000;
 }
 
 .error-message {
@@ -154,12 +154,12 @@ body {
 }
 
 .evaluacion-item .actions .edit-button {
-  background-color: #1cef00; 
+  background-color: #e3ef00; 
   color: #333;
 }
 
 .evaluacion-item .actions .edit-button:hover {
-  background-color: #e0a800;
+  background-color: #47e000;
 }
 
 .evaluacion-item .actions .delete-button {
