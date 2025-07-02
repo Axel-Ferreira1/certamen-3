@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.app-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.app-title {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.form-section, .list-section {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.form-section h2, .list-section h2 {
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.evaluacion-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.evaluacion-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+.evaluacion-form input[type="text"],
+.evaluacion-form input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.evaluacion-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.evaluacion-form button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.evaluacion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.evaluacion-item {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.evaluacion-item p {
+  margin: 5px 0;
+  color: #444;
+}
+
+.evaluacion-item strong {
+  color: #333;
+}
+
+.evaluacion-item .escala-apreciacion {
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: #e9ecef; /* Color neutro por defecto */
+  color: #333;
+}
+
+/* Colores para la escala de apreciación */
+.evaluacion-item .escala-apreciacion:contains("Deficiente") {
+  background-color: #dc3545; /* Rojo */
+  color: white;
+}
+.evaluacion-item .escala-apreciacion:contains("Con mejora") {
+  background-color: #ffc107; /* Amarillo */
+  color: #333;
+}
+.evaluacion-item .escala-apreciacion:contains("Buen trabajo") {
+  background-color: #17a2b8; /* Azul claro */
+  color: white;
+}
+.evaluacion-item .escala-apreciacion:contains("Destacado") {
+  background-color: #28a745; /* Verde */
+  color: white;
+}
+
+
+.evaluacion-item .actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; /* Alinea los botones a la derecha */
+}
+
+.evaluacion-item .actions button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.evaluacion-item .actions .edit-button {
+  background-color: #ffc107; /* Amarillo */
+  color: #333;
+}
+
+.evaluacion-item .actions .edit-button:hover {
+  background-color: #e0a800;
+}
+
+.evaluacion-item .actions .delete-button {
+  background-color: #dc3545; /* Rojo */
+  color: white;
+}
+
+.evaluacion-item .actions .delete-button:hover {
+  background-color: #c82333;
+}
