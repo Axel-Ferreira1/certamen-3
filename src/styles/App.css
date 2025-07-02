@@ -13,7 +13,7 @@ body {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
   width: 100%;
   max-width: 600px;
   text-align: center;
@@ -60,7 +60,7 @@ body {
 }
 
 .evaluacion-form button {
-  background-color: #007bff;
+  background-color: #ff0000;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -154,7 +154,7 @@ body {
 }
 
 .evaluacion-item .actions .edit-button {
-  background-color: #ffc107; /* Amarillo */
+  background-color: #1cef00; 
   color: #333;
 }
 
@@ -163,7 +163,7 @@ body {
 }
 
 .evaluacion-item .actions .delete-button {
-  background-color: #dc3545; /* Rojo */
+  background-color: #dc3545; 
   color: white;
 }
 
