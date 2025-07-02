@@ -6,26 +6,26 @@ function App() {
   const [evaluaciones, setEvaluaciones] = useState([]);
   const [evaluacionToEdit, setEvaluacionToEdit] = useState(null);
 
-  // Cargar evaluaciones desde localStorage al iniciar
+  
   useEffect(() => {
     const storedEvaluaciones = JSON.parse(localStorage.getItem('evaluaciones')) || [];
     setEvaluaciones(storedEvaluaciones);
   }, []);
 
-  // Guardar evaluaciones en localStorage cada vez que cambian
+  
   useEffect(() => {
     localStorage.setItem('evaluaciones', JSON.stringify(evaluaciones));
   }, [evaluaciones]);
 
   const addOrUpdateEvaluacion = (evaluacion) => {
     if (evaluacionToEdit) {
-      // Actualizar evaluación existente
+      
       setEvaluaciones(evaluaciones.map((evaluacionItem) =>
         evaluacionItem.id === evaluacion.id ? evaluacion : evaluacionItem
       ));
-      setEvaluacionToEdit(null); // Limpiar para que el formulario vuelva a "agregar"
+      setEvaluacionToEdit(null); 
     } else {
-      // Agregar nueva evaluación
+      
       setEvaluaciones([...evaluaciones, { ...evaluacion, id: Date.now() }]);
     }
   };
@@ -38,7 +38,7 @@ function App() {
     setEvaluacionToEdit(evaluacion);
   };
 
-  // Función para calcular la escala de apreciación
+  
   const getEscalaApreciacion = (promedio) => {
     if (promedio >= 1.0 && promedio <= 3.9) {
       return 'Deficiente';
@@ -49,7 +49,7 @@ function App() {
     } else if (promedio >= 6.5 && promedio <= 7.0) {
       return 'Destacado';
     }
-    return 'N/A'; // En caso de promedio fuera de rango
+    return 'N/A'; 
   };
 
   return (

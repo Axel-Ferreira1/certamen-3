@@ -114,25 +114,25 @@ body {
   padding: 5px 10px;
   border-radius: 4px;
   display: inline-block;
-  background-color: #e9ecef; /* Color neutro por defecto */
+  background-color: #e9ecef; 
   color: #333;
 }
 
-/* Colores para la escala de apreciación */
+
 .evaluacion-item .escala-apreciacion:contains("Deficiente") {
-  background-color: #dc3545; /* Rojo */
+  background-color: #dc3545; 
   color: white;
 }
 .evaluacion-item .escala-apreciacion:contains("Con mejora") {
-  background-color: #ffc107; /* Amarillo */
+  background-color: #ffc107; 
   color: #333;
 }
 .evaluacion-item .escala-apreciacion:contains("Buen trabajo") {
-  background-color: #17a2b8; /* Azul claro */
+  background-color: #17a2b8; 
   color: white;
 }
 .evaluacion-item .escala-apreciacion:contains("Destacado") {
-  background-color: #28a745; /* Verde */
+  background-color: #28a745; 
   color: white;
 }
 
@@ -141,7 +141,7 @@ body {
   margin-top: 15px;
   display: flex;
   gap: 10px;
-  justify-content: flex-end; /* Alinea los botones a la derecha */
+  justify-content: flex-end; 
 }
 
 .evaluacion-item .actions button {

@@ -6,14 +6,14 @@ function EvaluacionForm({ addOrUpdateEvaluacion, evaluacionToEdit }) {
   const [promedio, setPromedio] = useState('');
   const [error, setError] = useState('');
 
-  // Cargar datos si se está editando una evaluación
+  
   useEffect(() => {
     if (evaluacionToEdit) {
       setNombreAlumno(evaluacionToEdit.nombreAlumno);
       setAsignatura(evaluacionToEdit.asignatura);
       setPromedio(evaluacionToEdit.promedio.toString());
     } else {
-      // Limpiar formulario cuando no se está editando
+      
       setNombreAlumno('');
       setAsignatura('');
       setPromedio('');
@@ -24,7 +24,7 @@ function EvaluacionForm({ addOrUpdateEvaluacion, evaluacionToEdit }) {
     e.preventDefault();
     setError('');
 
-    // Validación básica de campos
+    
     if (!nombreAlumno || !asignatura || !promedio) {
       setError('Todos los campos son obligatorios.');
       return;
@@ -37,14 +37,14 @@ function EvaluacionForm({ addOrUpdateEvaluacion, evaluacionToEdit }) {
     }
 
     const nuevaEvaluacion = {
-      id: evaluacionToEdit ? evaluacionToEdit.id : Date.now(), // Usa el ID existente si es edición
+      id: evaluacionToEdit ? evaluacionToEdit.id : Date.now(), 
       nombreAlumno,
       asignatura,
       promedio: promedioNum,
     };
 
     addOrUpdateEvaluacion(nuevaEvaluacion);
-    // Limpiar el formulario después de agregar/actualizar
+  
     setNombreAlumno('');
     setAsignatura('');
     setPromedio('');
