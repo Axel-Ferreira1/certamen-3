@@ -58,7 +58,7 @@ function EvaluacionForm({ addOrUpdateEvaluacion, evaluacionToEdit }) {
         <input
           type="text"
           id="nombreAlumno"
-          placeholder="Ej: Juan Pérez"
+          placeholder="Ej: Axel Ferreira"
           value={nombreAlumno}
           onChange={(e) => setNombreAlumno(e.target.value)}
         />
@@ -68,7 +68,7 @@ function EvaluacionForm({ addOrUpdateEvaluacion, evaluacionToEdit }) {
         <input
           type="text"
           id="asignatura"
-          placeholder="Ej: Matemáticas"
+          placeholder="Ej: Programacion"
           value={asignatura}
           onChange={(e) => setAsignatura(e.target.value)}
         />

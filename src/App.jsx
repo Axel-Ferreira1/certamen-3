@@ -65,7 +65,7 @@ function App() {
       <div className="list-section">
         <h2>Evaluaciones Guardadas</h2>
         {evaluaciones.length === 0 ? (
-          <p>No hay evaluaciones guardadas aún. ¡Agrega una!</p>
+          <p>No hay evaluaciones guardadas aún.</p>
         ) : (
           <EvaluacionList
             evaluaciones={evaluaciones}
